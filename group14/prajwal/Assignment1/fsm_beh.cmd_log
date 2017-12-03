@@ -1,0 +1,230 @@
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Windows/System32/Assignment1/fsm_beh.xst" -ofn "C:/Windows/System32/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/Assignment1/fsm_beh.xst" -ofn "C:/Users/student/Desktop/Assignment1/fsm_beh.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fsm_beh.ngc fsm_beh.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fsm_beh_map.ncd fsm_beh.ngd fsm_beh.pcf 
+par -w -intstyle ise -ol high -t 1 fsm_beh_map.ncd fsm_beh.ncd fsm_beh.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fsm_beh.twx fsm_beh.ncd -o fsm_beh.twr fsm_beh.pcf 

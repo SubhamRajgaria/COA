@@ -1,0 +1,6 @@
+verilog work "stateTransFn_beh.v"
+verilog work "outputFn_beh.v"
+verilog work "delaElem_beh.v"
+verilog work "testBench.v"
+verilog work "fsm_beh.v"
+verilog work "top.v"

@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/Subham Rajgaria/Desktop/group14/assignment3/multiplier.xst" -ofn "C:/Users/Subham Rajgaria/Desktop/group14/assignment3/multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-fg320-4 "multiplier.ngc" multiplier.ngd  
+map -intstyle ise -p xc3s400-fg320-4 -cm area -ir off -pr off -c 100 -o multiplier_map.ncd multiplier.ngd multiplier.pcf 
+par -w -intstyle ise -ol high -t 1 multiplier_map.ncd multiplier.ncd multiplier.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml multiplier.twx multiplier.ncd -o multiplier.twr multiplier.pcf 
+netgen -intstyle ise -s 4  -pcf multiplier.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim multiplier.ncd multiplier_timesim.v 
+vhdtdtfi -lib work {C:/Users/Subham Rajgaria/Desktop/group14/assignment3/radixMultiplier.v} -lang verilog -prj assignment3 -o multiplier.spl -module multiplier -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 multiplier.spl {C:/Users/Subham Rajgaria/Desktop/group14/assignment3/multiplier.sym} 
+vhdtdtfi -lang verilog -prj assignment3 -o "C:/Users/Subham Rajgaria/Desktop/group14/assignment3/multiplier.tfi" -lib work "C:/Users/Subham Rajgaria/Desktop/group14/assignment3//radixMultiplier.v" -module multiplier -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/Subham Rajgaria/Desktop/group14/assignment3/multiplier.xst" -ofn "C:/Users/Subham Rajgaria/Desktop/group14/assignment3/multiplier.syr" 

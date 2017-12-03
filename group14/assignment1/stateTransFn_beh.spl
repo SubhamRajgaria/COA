@@ -1,0 +1,9 @@
+[Inputs]
+x
+=inputState[1:0]=
+[Outputs]
+=outputState[1:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel stateTransFn_beh
+

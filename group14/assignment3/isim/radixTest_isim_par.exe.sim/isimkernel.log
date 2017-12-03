@@ -1,0 +1,29 @@
+Command line:
+   radixTest_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55062
+
+Sat Aug 19 01:56:52 2017
+
+
+ Elaboration Time: 0.484375 sec
+
+ Current Memory Usage: 874.467 Meg
+
+ Total Signals          : 5216
+ Total Nets             : 2462
+ Total Signal Drivers   : 2481
+ Total Blocks           : 1214
+ Total Primitive Blocks : 875
+ Total Processes        : 2812
+ Total Traceable Variables  : 2836
+ Total Scalar Nets and Variables : 88513
+Total Line Count : 6280
+
+ Total Simulation Time: 0.59375 sec
+
+ Current Memory Usage: 717.181 Meg
+
+Sat Aug 19 01:58:00 2017
+

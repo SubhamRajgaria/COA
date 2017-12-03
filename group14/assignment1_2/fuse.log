@@ -1,0 +1,9 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Subham Rajgaria/Desktop/group14/assignment1_2/testState_isim_beh.exe -prj C:/Users/Subham Rajgaria/Desktop/group14/assignment1_2/testState_beh.prj work.testState work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Subham Rajgaria/Desktop/group14/assignment1_2/stateTransFn_beh.v" into library work
+ERROR:HDLCompiler:661 - "C:/Users/Subham Rajgaria/Desktop/group14/assignment1_2/stateTransFn_beh.v" Line 22: Non-net port x cannot be of mode input
+ERROR:HDLCompiler:598 - "C:/Users/Subham Rajgaria/Desktop/group14/assignment1_2/stateTransFn_beh.v" Line 21: Module <stateTransFn_beh> ignored due to previous errors.
+Verilog file C:/Users/Subham Rajgaria/Desktop/group14/assignment1_2/stateTransFn_beh.v ignored due to errors

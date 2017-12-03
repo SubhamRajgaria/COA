@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA Lab 1/Assignment2_toburn/Assignment2/controller_fsm.xst" -ofn "C:/Users/student/Desktop/COA Lab 1/Assignment2_toburn/Assignment2/controller_fsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 "controller_fsm.ngc" controller_fsm.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o controller_fsm_map.ncd controller_fsm.ngd controller_fsm.pcf 
+par -w -intstyle ise -ol high -t 1 controller_fsm_map.ncd controller_fsm.ncd controller_fsm.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml controller_fsm.twx controller_fsm.ncd -o controller_fsm.twr controller_fsm.pcf 
+netgen -intstyle ise -s 4  -pcf controller_fsm.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim controller_fsm.ncd controller_fsm_timesim.v 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA Lab 1/Assignment2_toburn/Assignment2/controller_fsm.xst" -ofn "C:/Users/student/Desktop/COA Lab 1/Assignment2_toburn/Assignment2/controller_fsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 "controller_fsm.ngc" controller_fsm.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o controller_fsm_map.ncd controller_fsm.ngd controller_fsm.pcf 
+par -w -intstyle ise -ol high -t 1 controller_fsm_map.ncd controller_fsm.ncd controller_fsm.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml controller_fsm.twx controller_fsm.ncd -o controller_fsm.twr controller_fsm.pcf 
+netgen -intstyle ise -s 4  -pcf controller_fsm.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim controller_fsm.ncd controller_fsm_timesim.v 
+xst -intstyle ise -ifn "C:/Users/student/Desktop/COA Lab 1/Assignment2_toburn/Assignment2/controller_fsm.xst" -ofn "C:/Users/student/Desktop/COA Lab 1/Assignment2_toburn/Assignment2/controller_fsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 "controller_fsm.ngc" controller_fsm.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o controller_fsm_map.ncd controller_fsm.ngd controller_fsm.pcf 
+par -w -intstyle ise -ol high -t 1 controller_fsm_map.ncd controller_fsm.ncd controller_fsm.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml controller_fsm.twx controller_fsm.ncd -o controller_fsm.twr controller_fsm.pcf 
+netgen -intstyle ise -s 4  -pcf controller_fsm.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim controller_fsm.ncd controller_fsm_timesim.v 

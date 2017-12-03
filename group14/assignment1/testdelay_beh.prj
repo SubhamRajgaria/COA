@@ -1,0 +1,3 @@
+verilog work "delaElem_beh.v"
+verilog work "testdelay.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

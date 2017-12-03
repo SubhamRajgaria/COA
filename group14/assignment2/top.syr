@@ -1,0 +1,504 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.57 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.57 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-pq208
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "status_detector.v" in library work
+Module <status_detector> compiled
+Compiling verilog file "registers.v" in library work
+Module <borrowout> compiled
+Module <register4bit> compiled
+Compiling verilog file "functional_unit.v" in library work
+Module <register10bit> compiled
+Compiling verilog file "datapath.v" in library work
+Module <functional_unit> compiled
+Compiling verilog file "controller_fsm.v" in library work
+Module <datapath> compiled
+Compiling verilog file "top.v" in library work
+Module <controller_fsm> compiled
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work>.
+
+Analyzing hierarchy for module <datapath> in library <work>.
+
+Analyzing hierarchy for module <controller_fsm> in library <work> with parameters.
+	q0 = "0000"
+	q1 = "0001"
+	q10 = "1010"
+	q2 = "0010"
+	q3 = "0011"
+	q4 = "0100"
+	q5 = "0101"
+	q6 = "0110"
+	q7 = "0111"
+	q8 = "1000"
+	q9 = "1001"
+
+Analyzing hierarchy for module <register10bit> in library <work>.
+
+Analyzing hierarchy for module <status_detector> in library <work>.
+
+Analyzing hierarchy for module <functional_unit> in library <work>.
+
+Analyzing hierarchy for module <borrowout> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+Module <top> is correct for synthesis.
+ 
+Analyzing module <datapath> in library <work>.
+Module <datapath> is correct for synthesis.
+ 
+Analyzing module <register10bit> in library <work>.
+Module <register10bit> is correct for synthesis.
+ 
+Analyzing module <status_detector> in library <work>.
+Module <status_detector> is correct for synthesis.
+ 
+Analyzing module <borrowout> in library <work>.
+Module <borrowout> is correct for synthesis.
+ 
+Analyzing module <functional_unit> in library <work>.
+Module <functional_unit> is correct for synthesis.
+ 
+Analyzing module <controller_fsm> in library <work>.
+	q0 = 4'b0000
+	q1 = 4'b0001
+	q10 = 4'b1010
+	q2 = 4'b0010
+	q3 = 4'b0011
+	q4 = 4'b0100
+	q5 = 4'b0101
+	q6 = 4'b0110
+	q7 = 4'b0111
+	q8 = 4'b1000
+	q9 = 4'b1001
+Module <controller_fsm> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <controller_fsm>.
+    Related source file is "controller_fsm.v".
+WARNING:Xst:646 - Signal <check_B0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <ldn>.
+    Found 1-bit register for signal <ldout>.
+    Found 1-bit register for signal <ldf0>.
+    Found 1-bit register for signal <ldf1>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <Tout>.
+    Found 1-bit register for signal <ldcnt>.
+    Found 3-bit register for signal <fn_sel>.
+    Found 1-bit register for signal <over>.
+    Found 1-bit register for signal <Tcnt>.
+    Found 1-bit register for signal <Tn>.
+    Found 1-bit register for signal <Tf0>.
+    Found 1-bit register for signal <Tf1>.
+    Summary:
+	inferred  18 D-type flip-flop(s).
+Unit <controller_fsm> synthesized.
+
+
+Synthesizing Unit <register10bit>.
+    Related source file is "registers.v".
+    Found 10-bit tristate buffer for signal <out>.
+    Found 10-bit register for signal <data>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+	inferred  10 Tristate(s).
+Unit <register10bit> synthesized.
+
+
+Synthesizing Unit <functional_unit>.
+    Related source file is "functional_unit.v".
+    Found 10-bit adder for signal <z$addsub0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <functional_unit> synthesized.
+
+
+Synthesizing Unit <borrowout>.
+    Related source file is "status_detector.v".
+Unit <borrowout> synthesized.
+
+
+Synthesizing Unit <status_detector>.
+    Related source file is "status_detector.v".
+Unit <status_detector> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "datapath.v".
+Unit <datapath> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+WARNING:Xst:646 - Signal <state> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 10-bit adder                                          : 1
+# Registers                                            : 18
+ 1-bit register                                        : 11
+ 10-bit register                                       : 5
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+# Tristates                                            : 5
+ 10-bit tristate buffer                                : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 10-bit adder                                          : 1
+# Registers                                            : 68
+ Flip-Flops                                            : 68
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit top: 10 internal tristates are replaced by logic (pull-up yes): N12, N13, N14, N15, N16, N17, N18, N19, N20, N21.
+WARNING:Xst:2040 - Unit top: 20 multi-source signals are replaced by logic (pull-up yes): D1/busx<0>, D1/busx<1>, D1/busx<2>, D1/busx<3>, D1/busx<4>, D1/busx<5>, D1/busx<6>, D1/busx<7>, D1/busx<8>, D1/busx<9>, out<0>_MLTSRCEDGE, out<1>_MLTSRCEDGE, out<2>_MLTSRCEDGE, out<3>_MLTSRCEDGE, out<4>_MLTSRCEDGE, out<5>_MLTSRCEDGE, out<6>_MLTSRCEDGE, out<7>_MLTSRCEDGE, out<8>_MLTSRCEDGE, out<9>_MLTSRCEDGE.
+
+Optimizing unit <top> ...
+
+Optimizing unit <controller_fsm> ...
+
+Optimizing unit <functional_unit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 2.
+FlipFlop D2/Tcnt has been replicated 1 time(s)
+FlipFlop D2/Tf1 has been replicated 1 time(s)
+FlipFlop D2/Tout has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 154
+#      GND                         : 1
+#      LUT2                        : 3
+#      LUT2_D                      : 1
+#      LUT3                        : 19
+#      LUT3_L                      : 1
+#      LUT4                        : 86
+#      LUT4_D                      : 5
+#      LUT4_L                      : 4
+#      MUXCY                       : 9
+#      MUXF5                       : 15
+#      XORCY                       : 10
+# FlipFlops/Latches                : 72
+#      FD_1                        : 17
+#      FDE                         : 50
+#      FDR_1                       : 1
+#      FDS_1                       : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 11
+#      OBUF                        : 1
+#      OBUFT                       : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-4 
+
+ Number of Slices:                       72  out of   3584     2%  
+ Number of Slice Flip Flops:             72  out of   7168     1%  
+ Number of 4 input LUTs:                119  out of   7168     1%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    141    16%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 72    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 18.414ns (Maximum Frequency: 54.307MHz)
+   Minimum input arrival time before clock: 3.181ns
+   Maximum output required time after clock: 11.312ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 18.414ns (frequency: 54.307MHz)
+  Total number of paths / destination ports: 6507 / 117
+-------------------------------------------------------------------------
+Delay:               9.207ns (Levels of Logic = 6)
+  Source:            D2/Tf1_1 (FF)
+  Destination:       D1/outp/data_9 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: D2/Tf1_1 to D1/outp/data_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS_1:C->Q            7   0.720   1.405  D2/Tf1_1 (D2/Tf1_1)
+     LUT3:I0->O            1   0.551   0.827  out<0>_MLTSRCEDGELogicTrst11_1 (out<0>_MLTSRCEDGELogicTrst11)
+     LUT4:I3->O            2   0.551   0.903  out<9>_MLTSRCEDGELogicTrst (out<9>_MLTSRCEDGE)
+     LUT4:I3->O            2   0.551   0.945  N12LogicTrst1 (N12)
+     LUT3:I2->O            0   0.551   0.000  D1/ALU/Madd_z_addsub0000_lut<9> (D1/ALU/Madd_z_addsub0000_lut<9>)
+     XORCY:LI->O           1   0.622   0.827  D1/ALU/Madd_z_addsub0000_xor<9> (D1/ALU/z_addsub0000<9>)
+     LUT4:I3->O            4   0.551   0.000  D1/ALU/z<9>1 (D1/busz<9>)
+     FDE:D                     0.203          D1/outp/data_9
+    ----------------------------------------
+    Total                      9.207ns (4.300ns logic, 4.907ns route)
+                                       (46.7% logic, 53.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 13 / 12
+-------------------------------------------------------------------------
+Offset:              3.181ns (Levels of Logic = 3)
+  Source:            go (PAD)
+  Destination:       D2/state_0 (FF)
+  Destination Clock: clk falling
+
+  Data Path: go to D2/state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.821   1.246  go_IBUF (go_IBUF)
+     LUT4:I0->O            1   0.551   0.000  D2/state_mux0000<3>_G (N134)
+     MUXF5:I1->O           1   0.360   0.000  D2/state_mux0000<3> (D2/state_mux0000<3>)
+     FD_1:D                    0.203          D2/state_0
+    ----------------------------------------
+    Total                      3.181ns (1.935ns logic, 1.246ns route)
+                                       (60.8% logic, 39.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 121 / 11
+-------------------------------------------------------------------------
+Offset:              11.312ns (Levels of Logic = 3)
+  Source:            D2/Tcnt (FF)
+  Destination:       out<7> (PAD)
+  Source Clock:      clk falling
+
+  Data Path: D2/Tcnt to out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            15   0.720   1.527  D2/Tcnt (D2/Tcnt)
+     LUT3:I0->O           19   0.551   1.518  out<0>_MLTSRCEDGELogicTrst11 (N01)
+     LUT4:I2->O            1   0.551   0.801  out<7>_MLTSRCEDGELogicTrst (out<7>_MLTSRCEDGE)
+     OBUFT:I->O                5.644          out_7_OBUFT (out<7>)
+    ----------------------------------------
+    Total                     11.312ns (7.466ns logic, 3.846ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.52 secs
+ 
+--> 
+
+Total memory usage is 292668 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

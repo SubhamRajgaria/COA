@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Subham Rajgaria/Desktop/group14/assignment1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Subham Rajgaria/Desktop/group14/assignment1/xst"
+elaborate
+-ifn stateTransFn_beh.prj
+-ifmt mixed

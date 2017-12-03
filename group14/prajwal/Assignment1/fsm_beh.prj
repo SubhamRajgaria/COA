@@ -1,0 +1,4 @@
+verilog work "stateTransFn_beh.v"
+verilog work "outputFn_beh.v"
+verilog work "delayElem_beh.v"
+verilog work "fsm_beh.v"

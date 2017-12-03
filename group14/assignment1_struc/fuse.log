@@ -1,0 +1,24 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Subham Rajgaria/Desktop/group14/assignment1_struc/fsmTest_isim_beh.exe -prj C:/Users/Subham Rajgaria/Desktop/group14/assignment1_struc/fsmTest_beh.prj work.fsmTest work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Subham Rajgaria/Desktop/group14/assignment1_struc/top.v" into library work
+Analyzing Verilog file "C:/Users/Subham Rajgaria/Desktop/group14/assignment1_struc/fsmTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:329 - "C:/Users/Subham Rajgaria/Desktop/group14/assignment1_struc/top.v" Line 99: Target <p1> of concurrent assignment or output port connection should be a net type.
+WARNING:HDLCompiler:329 - "C:/Users/Subham Rajgaria/Desktop/group14/assignment1_struc/top.v" Line 100: Target <p0> of concurrent assignment or output port connection should be a net type.
+Completed static elaboration
+Compiling module stateTransFn_struc
+Compiling module outputFn_struc
+Compiling module DFF
+Compiling module delay_Elemstruc
+Compiling module fsm_struc
+Compiling module fsmTest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 7 Verilog Units
+Built simulation executable C:/Users/Subham Rajgaria/Desktop/group14/assignment1_struc/fsmTest_isim_beh.exe
+Fuse Memory Usage: 28268 KB
+Fuse CPU Usage: 858 ms

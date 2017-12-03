@@ -1,0 +1,23 @@
+Running : C:\Xilinx\10.1\ISE\bin\nt\unwrapped\fuse.exe -ise
+E:/group14/first/first.ise -intstyle ise -incremental -lib unisims_ver -lib
+unimacro_ver -lib xilinxcorelib_ver -o test_add_isim_beh.exe -prj
+test_add_beh.prj -top test_add -top glbl
+Determining compilation order of HDL files
+Analyzing Verilog file add.v
+Analyzing Verilog file test_add.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.add into e:/group14/first/isim/work/add.sdb
+Saving Verilog parse-tree work.test_add into
+e:/group14/first/isim/work/test_add.sdb
+Saving Verilog parse-tree work.glbl into e:/group14/first/isim/work/glbl.sdb
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 128980 Kb
+Fuse CPU Usage: 30 ms
+Compiling module glbl
+Compiling module add
+Compiling module test_add
+Compiled 3 Verilog Units
+Built simulation executable test_add_isim_beh.exe
+Fuse Memory Usage: 130372 Kb
+Fuse CPU Usage: 77 ms

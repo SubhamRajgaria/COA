@@ -1,0 +1,2 @@
+verilog isim_temp "netgen/par/controller_fsm_timesim.v"
+verilog isim_temp "cont_test.v"

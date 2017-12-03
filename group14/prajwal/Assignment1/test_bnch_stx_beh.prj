@@ -1,0 +1,6 @@
+verilog isim_temp "stateTransFn_beh.v"
+verilog isim_temp "outputFn_beh.v"
+verilog isim_temp "delayElem_beh.v"
+verilog isim_temp "fsm_beh.v"
+verilog isim_temp "test_bnch.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

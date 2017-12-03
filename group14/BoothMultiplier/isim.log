@@ -1,0 +1,32 @@
+ISim log file
+Running: C:\Users\Subham Rajgaria\Desktop\group14\BoothMultiplier\BMtest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/BMtest_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING:  For instance dpath/cnt/, width 16 of formal port in is not equal to width 3 of actual constant.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 286.  For instance dpath/cnt/, width 16 of formal port out is not equal to width 3 of actual signal ct.
+WARNING:  For instance dec1/pp/, width 1 of formal port c is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 89.  For instance dec1/pp/, width 8 of formal port diff is not equal to width 3 of actual signal out.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 271.  For instance dpath/mcand/, width 16 of formal port in is not equal to width 8 of actual signal A.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 274.  For instance dpath/mcand/, width 16 of formal port out is not equal to width 8 of actual signal md.
+WARNING:  For instance c1/add/, width 8 of formal port b is not equal to width 32 of actual constant.
+WARNING:  For instance c1/add/, width 1 of formal port c is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 275.  For instance dpath/compmd/, width 16 of formal port in is not equal to width 8 of actual signal nmd.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 276.  For instance dpath/compmd/, width 16 of formal port out is not equal to width 8 of actual signal c2md.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 280.  For instance dpath/regac/, width 16 of formal port in is not equal to width 8 of actual signal macc.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 279.  For instance dpath/regac/, width 16 of formal port out is not equal to width 8 of actual signal acc.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 281.  For instance dpath/regmp/, width 16 of formal port in is not equal to width 8 of actual signal mmp.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 282.  For instance dpath/regmp/, width 16 of formal port out is not equal to width 8 of actual signal mp.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 290.  For instance dpath/lbit/, width 16 of formal port in is not equal to width 1 of actual signal lb.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 291.  For instance dpath/lbit/, width 16 of formal port out is not equal to width 1 of actual signal lastbit.
+WARNING:  For instance dpath/alu/, width 1 of formal port c is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 355.  For instance contrl/r1/, width 16 of formal port in is not equal to width 3 of actual signal nextstate.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 353.  For instance contrl/r1/, width 16 of formal port out is not equal to width 3 of actual signal state.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

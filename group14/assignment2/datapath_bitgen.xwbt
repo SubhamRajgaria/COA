@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\USER\Desktop\COA Lab 1\Task 2\Assignment2\datapath.ncd
+OUTFILE=C:\Users\USER\Desktop\COA Lab 1\Task 2\Assignment2\datapath.bit
+FAMILY=Spartan3
+PART=xc3s400-4pq208
+WORKINGDIR=C:\Users\USER\Desktop\COA Lab 1\Task 2\Assignment2
+LICENSE=WebPack
+USER_INFO=211375421_0_0_156

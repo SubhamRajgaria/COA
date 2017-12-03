@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Subham Rajgaria/Desktop/group14/assignment1/outputTest_isim_beh.exe -prj C:/Users/Subham Rajgaria/Desktop/group14/assignment1/outputTest_beh.prj work.outputTest work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Subham Rajgaria/Desktop/group14/assignment1/outputFn_beh.v" into library work
+Analyzing Verilog file "C:/Users/Subham Rajgaria/Desktop/group14/assignment1/outputTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:329 - "C:/Users/Subham Rajgaria/Desktop/group14/assignment1/outputTest.v" Line 47: Target <rst> of concurrent assignment or output port connection should be a net type.
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/assignment1/outputTest.v" Line 47: Size mismatch in connection of port <clk>. Formal port size is 1-bit while actual signal size is 2-bit.
+Completed static elaboration
+Compiling module outputFn_beh
+Compiling module outputTest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/Subham Rajgaria/Desktop/group14/assignment1/outputTest_isim_beh.exe
+Fuse Memory Usage: 27344 KB
+Fuse CPU Usage: 796 ms

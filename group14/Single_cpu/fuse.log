@@ -1,0 +1,40 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Subham Rajgaria/Desktop/Single_cpu/top_isim_beh.exe -prj C:/Users/Subham Rajgaria/Desktop/Single_cpu/top_beh.prj work.top work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Subham Rajgaria/Desktop/Single_cpu/datapath.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:188 - "C:/Users/Subham Rajgaria/Desktop/Single_cpu/datapath.v" Line 30: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/Single_cpu/datapath.v" Line 193: Size mismatch in connection of port <fsel>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1016 - "C:/Users/Subham Rajgaria/Desktop/Single_cpu/datapath.v" Line 561: Port dsel is not connected to this instance
+Completed static elaboration
+Compiling module controller
+Compiling module register16_2
+Compiling module register16_1
+Compiling module decoder3to8
+Compiling module register16
+Compiling module mux_821
+Compiling module tristate
+Compiling module reg_bank
+Compiling module alu2
+Compiling module alu1
+Compiling module ALU
+Compiling module muxer
+Compiling module Paddings
+Compiling module MemData
+Compiling module MemoryIR
+Compiling module mux_921
+Compiling module selection
+Compiling module dflipflop
+Compiling module datapath
+Compiling module test
+Compiling module top
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 22 Verilog Units
+Built simulation executable C:/Users/Subham Rajgaria/Desktop/Single_cpu/top_isim_beh.exe
+Fuse Memory Usage: 29676 KB
+Fuse CPU Usage: 1125 ms

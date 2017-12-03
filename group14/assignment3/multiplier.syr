@@ -1,0 +1,880 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: multiplier.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "multiplier.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "multiplier"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-fg320
+
+---- Source Options
+Top Module Name                    : multiplier
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "radixMultiplier.v" in library work
+Module <datapath> compiled
+Module <alu> compiled
+Module <bit9_mux_2to1> compiled
+Module <mux2to1> compiled
+Module <sub_9> compiled
+Module <add_9> compiled
+Module <fa> compiled
+Module <mux4to1> compiled
+Module <mux_prd> compiled
+Module <mux_count> compiled
+Module <status_count> compiled
+Module <register_4> compiled
+Module <register_8> compiled
+Module <register_18> compiled
+Module <dff_latch> compiled
+Module <dff> compiled
+Module <state_change> compiled
+Module <nextstate> compiled
+Module <func_load> compiled
+Module <controller> compiled
+Module <multiplier> compiled
+No errors in compilation
+Analysis of file <"multiplier.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <multiplier> in library <work>.
+
+Analyzing hierarchy for module <datapath> in library <work>.
+
+Analyzing hierarchy for module <controller> in library <work>.
+
+Analyzing hierarchy for module <mux_count> in library <work>.
+
+Analyzing hierarchy for module <register_4> in library <work>.
+
+Analyzing hierarchy for module <register_8> in library <work>.
+
+Analyzing hierarchy for module <bit9_mux_2to1> in library <work>.
+
+Analyzing hierarchy for module <alu> in library <work>.
+
+Analyzing hierarchy for module <mux_prd> in library <work>.
+
+Analyzing hierarchy for module <register_18> in library <work>.
+
+Analyzing hierarchy for module <nextstate> in library <work>.
+
+Analyzing hierarchy for module <state_change> in library <work>.
+
+Analyzing hierarchy for module <func_load> in library <work>.
+
+Analyzing hierarchy for module <mux2to1> in library <work>.
+
+Analyzing hierarchy for module <status_count> in library <work>.
+
+Analyzing hierarchy for module <dff> in library <work>.
+
+Analyzing hierarchy for module <add_9> in library <work>.
+
+Analyzing hierarchy for module <sub_9> in library <work>.
+
+Analyzing hierarchy for module <bit9_mux_2to1> in library <work>.
+
+Analyzing hierarchy for module <mux4to1> in library <work>.
+
+Analyzing hierarchy for module <dff_latch> in library <work>.
+
+Analyzing hierarchy for module <fa> in library <work>.
+
+Analyzing hierarchy for module <add_9> in library <work>.
+
+Analyzing hierarchy for module <mux2to1> in library <work>.
+
+Analyzing hierarchy for module <fa> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <multiplier>.
+Module <multiplier> is correct for synthesis.
+ 
+Analyzing module <datapath> in library <work>.
+Module <datapath> is correct for synthesis.
+ 
+Analyzing module <mux_count> in library <work>.
+Module <mux_count> is correct for synthesis.
+ 
+Analyzing module <mux2to1> in library <work>.
+Module <mux2to1> is correct for synthesis.
+ 
+Analyzing module <status_count> in library <work>.
+Module <status_count> is correct for synthesis.
+ 
+Analyzing module <register_4> in library <work>.
+Module <register_4> is correct for synthesis.
+ 
+Analyzing module <dff> in library <work>.
+Module <dff> is correct for synthesis.
+ 
+Analyzing module <dff_latch> in library <work>.
+Module <dff_latch> is correct for synthesis.
+ 
+Analyzing module <register_8> in library <work>.
+Module <register_8> is correct for synthesis.
+ 
+Analyzing module <bit9_mux_2to1> in library <work>.
+Module <bit9_mux_2to1> is correct for synthesis.
+ 
+Analyzing module <alu> in library <work>.
+Module <alu> is correct for synthesis.
+ 
+Analyzing module <add_9> in library <work>.
+Module <add_9> is correct for synthesis.
+ 
+Analyzing module <fa> in library <work>.
+Module <fa> is correct for synthesis.
+ 
+Analyzing module <sub_9> in library <work>.
+Module <sub_9> is correct for synthesis.
+ 
+Analyzing module <mux_prd> in library <work>.
+Module <mux_prd> is correct for synthesis.
+ 
+Analyzing module <mux4to1> in library <work>.
+Module <mux4to1> is correct for synthesis.
+ 
+Analyzing module <register_18> in library <work>.
+Module <register_18> is correct for synthesis.
+ 
+Analyzing module <controller> in library <work>.
+Module <controller> is correct for synthesis.
+ 
+Analyzing module <nextstate> in library <work>.
+Module <nextstate> is correct for synthesis.
+ 
+Analyzing module <state_change> in library <work>.
+Module <state_change> is correct for synthesis.
+ 
+Analyzing module <func_load> in library <work>.
+Module <func_load> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux2to1>.
+    Related source file is "radixMultiplier.v".
+    Found 1-bit tristate buffer for signal <out>.
+    Summary:
+	inferred   2 Tristate(s).
+Unit <mux2to1> synthesized.
+
+
+Synthesizing Unit <status_count>.
+    Related source file is "radixMultiplier.v".
+Unit <status_count> synthesized.
+
+
+Synthesizing Unit <dff_latch>.
+    Related source file is "radixMultiplier.v".
+Unit <dff_latch> synthesized.
+
+
+Synthesizing Unit <fa>.
+    Related source file is "radixMultiplier.v".
+    Found 1-bit xor3 for signal <s>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <fa> synthesized.
+
+
+Synthesizing Unit <nextstate>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:646 - Signal <r5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <nextstate> synthesized.
+
+
+Synthesizing Unit <state_change>.
+    Related source file is "radixMultiplier.v".
+    Found 2-bit register for signal <state>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <state_change> synthesized.
+
+
+Synthesizing Unit <func_load>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:646 - Signal <s2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <p7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <p0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <func_load> synthesized.
+
+
+Synthesizing Unit <controller>.
+    Related source file is "radixMultiplier.v".
+Unit <controller> synthesized.
+
+
+Synthesizing Unit <mux_count>.
+    Related source file is "radixMultiplier.v".
+Unit <mux_count> synthesized.
+
+
+Synthesizing Unit <bit9_mux_2to1>.
+    Related source file is "radixMultiplier.v".
+Unit <bit9_mux_2to1> synthesized.
+
+
+Synthesizing Unit <dff>.
+    Related source file is "radixMultiplier.v".
+Unit <dff> synthesized.
+
+
+Synthesizing Unit <add_9>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:646 - Signal <carry<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <add_9> synthesized.
+
+
+Synthesizing Unit <mux4to1>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:1780 - Signal <mux<2><0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <mux4to1> synthesized.
+
+
+Synthesizing Unit <register_4>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:647 - Input <load> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <register_4> synthesized.
+
+
+Synthesizing Unit <register_8>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:647 - Input <load> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <register_8> synthesized.
+
+
+Synthesizing Unit <mux_prd>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:647 - Input <regout<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <mux_prd> synthesized.
+
+
+Synthesizing Unit <register_18>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:647 - Input <load> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <register_18> synthesized.
+
+
+Synthesizing Unit <sub_9>.
+    Related source file is "radixMultiplier.v".
+Unit <sub_9> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:647 - Input <f_sel<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <out_y> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:646 - Signal <out_y<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <datapath> synthesized.
+
+
+Synthesizing Unit <multiplier>.
+    Related source file is "radixMultiplier.v".
+WARNING:Xst:646 - Signal <reg_in> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <multiplier> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 2-bit register                                        : 1
+# Tristates                                            : 152
+ 1-bit tristate buffer                                 : 152
+# Xors                                                 : 27
+ 1-bit xor3                                            : 27
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <m8> is unconnected in block <mux>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Xors                                                 : 27
+ 1-bit xor3                                            : 27
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: d/count_reg/d3/d1/Q_and0000.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: d/count_reg/d1/d1/Q_and0000.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: d/count_reg/d2/d2/Q_and0000.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: d/count_reg/d3/d2/Q_and0000.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: d/count_reg/d0/d1/Q_and0000.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: d/count_reg/d0/d2/Q_and0000.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: d/count_reg/d2/d1/Q_and0000.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: d/count_reg/d1/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d2/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d3/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d4/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d2/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d3/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d6/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d4/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d0/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d7/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d6/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d1/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d0/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d5/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d1/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d7/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_8 : the following signal(s) form a combinatorial loop: d5/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d6/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d7/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d9/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d3/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d0/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d14/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d8/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d5/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d12/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d15/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d13/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d8/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d16/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d4/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d5/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d11/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d16/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d1/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d2/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d17/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d6/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d4/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d12/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d9/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d10/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d2/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d10/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d11/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d7/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d3/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d15/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d0/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d1/d2/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d14/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d17/d1/Q_and0000.
+WARNING:Xst:2170 - Unit register_18 : the following signal(s) form a combinatorial loop: d13/d1/Q_and0000.
+WARNING:Xst:2040 - Unit multiplier: 4 multi-source signals are replaced by logic (pull-up yes): d/count_in<0>, d/count_in<1>, d/count_in<2>, d/count_in<3>.
+WARNING:Xst:2040 - Unit mux_prd: 54 multi-source signals are replaced by logic (pull-up yes): m0/mux<0>, m0/mux<1>, m1/mux<0>, m1/mux<1>, m10/mux<0>, m10/mux<1>, m11/mux<0>, m11/mux<1>, m12/mux<0>, m12/mux<1>, m13/mux<0>, m13/mux<1>, m14/mux<0>, m14/mux<1>, m15/mux<0>, m15/mux<1>, m16/mux<0>, m16/mux<1>, m17/mux<0>, m17/mux<1>, m2/mux<0>, m2/mux<1>, m3/mux<0>, m3/mux<1>, m4/mux<0>, m4/mux<1>, m5/mux<0>, m5/mux<1>, m6/mux<0>, m6/mux<1>, m7/mux<0>, m7/mux<1>, m8/mux<0>, m8/mux<1>, m9/mux<0>, m9/mux<1>, out<0>, out<10>, out<11>, out<12>, out<13>, out<14>, out<15>, out<16>, out<17>, out<1>, out<2>, out<3>, out<4>, out<5>, out<6>, out<7>, out<8>, out<9>.
+WARNING:Xst:2040 - Unit bit9_mux_2to1: 9 multi-source signals are replaced by logic (pull-up yes): out<0>, out<1>, out<2>, out<3>, out<4>, out<5>, out<6>, out<7>, out<8>.
+
+Optimizing unit <multiplier> ...
+
+Optimizing unit <bit9_mux_2to1> ...
+
+Optimizing unit <register_8> ...
+
+Optimizing unit <register_18> ...
+
+Optimizing unit <mux_prd> ...
+
+Mapping all equations...
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<8>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<5>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<0>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<13>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<3>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<1>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<15>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<11>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<6>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<2>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<4>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<10>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<12>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<16>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<17>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<9>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<7>.
+WARNING:Xst:2170 - Unit multiplier : the following signal(s) form a combinatorial loop: ans<14>.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block multiplier, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : multiplier.ngr
+Top Level Output File Name         : multiplier
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 40
+
+Cell Usage :
+# BELS                             : 157
+#      LUT2                        : 11
+#      LUT3                        : 75
+#      LUT3_D                      : 2
+#      LUT4                        : 41
+#      LUT4_D                      : 3
+#      LUT4_L                      : 3
+#      MUXF5                       : 22
+# FlipFlops/Latches                : 2
+#      FDR                         : 2
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 40
+#      IBUF                        : 19
+#      OBUF                        : 21
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400fg320-4 
+
+ Number of Slices:                       82  out of   3584     2%  
+ Number of Slice Flip Flops:              2  out of   7168     0%  
+ Number of 4 input LUTs:                135  out of   7168     1%  
+ Number of IOs:                          40
+ Number of bonded IOBs:                  40  out of    221    18%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | IBUF+BUFG              | 2     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 15.162ns (Maximum Frequency: 65.954MHz)
+   Minimum input arrival time before clock: 15.223ns
+   Maximum output required time after clock: 103.836ns
+   Maximum combinational path delay: 103.482ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 15.162ns (frequency: 65.954MHz)
+  Total number of paths / destination ports: 88 / 2
+-------------------------------------------------------------------------
+Delay:               15.162ns (Levels of Logic = 10)
+  Source:            c/sc/state_0 (FF)
+  Destination:       c/sc/state_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: c/sc/state_0 to c/sc/state_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             14   0.720   1.382  c/sc/state_0 (c/sc/state_0)
+     LUT3:I1->O            4   0.551   1.112  d/count_reg/d0/d1/Q_and000021 (N22)
+     LUT3_D:I1->O          2   0.551   1.216  d/count_reg/d3/d1/Q_and00001 (d/count_reg/d3/d1/Q_and0000)
+     LUT4_D:I0->O          3   0.551   0.933  d/count_reg/d3/d2/Q_and00001 (d/count_reg/d3/d2/Q_and0000)
+     LUT4_L:I3->LO         2   0.551   0.439  d/count_reg/d2/d1/Q_and00001 (d/count_reg/d2/d1/Q_and0000)
+     LUT4:I0->O            3   0.551   0.933  d/count_reg/d2/d2/Q_and00001 (d/count_reg/d2/d2/Q_and0000)
+     LUT4_L:I3->LO         2   0.551   0.439  d/count_reg/d1/d1/Q_and00001 (d/count_reg/d1/d1/Q_and0000)
+     LUT4_D:I0->O          3   0.551   0.933  d/count_reg/d1/d2/Q_and00001 (d/count_reg/d1/d2/Q_and0000)
+     LUT4_L:I3->LO         2   0.551   0.439  d/count_reg/d0/d1/Q_and00001 (d/count_reg/d0/d1/Q_and0000)
+     LUT4_D:I0->O          2   0.551   0.903  d/count_reg/d0/d2/Q_and00001 (d/count_reg/d0/d2/Q_and0000)
+     LUT4:I3->O            1   0.551   0.000  c/ns/next_state_1_or0000 (c/next_state<1>)
+     FDR:D                     0.203          c/sc/state_1
+    ----------------------------------------
+    Total                     15.162ns (6.433ns logic, 8.729ns route)
+                                       (42.4% logic, 57.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 46 / 4
+-------------------------------------------------------------------------
+Offset:              15.223ns (Levels of Logic = 11)
+  Source:            clk (PAD)
+  Destination:       c/sc/state_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: clk to c/sc/state_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.821   1.342  clk_IBUF (clk_IBUF1)
+     LUT3:I0->O            4   0.551   1.112  d/count_reg/d0/d1/Q_and000021 (N22)
+     LUT3_D:I1->O          2   0.551   1.216  d/count_reg/d3/d1/Q_and00001 (d/count_reg/d3/d1/Q_and0000)
+     LUT4_D:I0->O          3   0.551   0.933  d/count_reg/d3/d2/Q_and00001 (d/count_reg/d3/d2/Q_and0000)
+     LUT4_L:I3->LO         2   0.551   0.439  d/count_reg/d2/d1/Q_and00001 (d/count_reg/d2/d1/Q_and0000)
+     LUT4:I0->O            3   0.551   0.933  d/count_reg/d2/d2/Q_and00001 (d/count_reg/d2/d2/Q_and0000)
+     LUT4_L:I3->LO         2   0.551   0.439  d/count_reg/d1/d1/Q_and00001 (d/count_reg/d1/d1/Q_and0000)
+     LUT4_D:I0->O          3   0.551   0.933  d/count_reg/d1/d2/Q_and00001 (d/count_reg/d1/d2/Q_and0000)
+     LUT4_L:I3->LO         2   0.551   0.439  d/count_reg/d0/d1/Q_and00001 (d/count_reg/d0/d1/Q_and0000)
+     LUT4_D:I0->O          2   0.551   0.903  d/count_reg/d0/d2/Q_and00001 (d/count_reg/d0/d2/Q_and0000)
+     LUT4:I3->O            1   0.551   0.000  c/ns/next_state_1_or0000 (c/next_state<1>)
+     FDR:D                     0.203          c/sc/state_1
+    ----------------------------------------
+    Total                     15.223ns (6.534ns logic, 8.689ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2219508 / 21
+-------------------------------------------------------------------------
+Offset:              103.836ns (Levels of Logic = 74)
+  Source:            c/sc/state_1 (FF)
+  Destination:       ans<17> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: c/sc/state_1 to ans<17>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             14   0.720   1.526  c/sc/state_1 (c/sc/state_1)
+     LUT3:I0->O           16   0.551   1.576  c/ldr_1_and00001 (ldr<1>)
+     LUT3:I0->O            2   0.551   1.072  d/mcand_reg/d0/d1/Q_and00001 (d/mcand_reg/d0/d1/Q_and0000)
+     LUT3:I1->O            6   0.551   1.342  d/mcand_reg/d0/d2/Q1 (d/bus_y<0>)
+     LUT2:I0->O            4   0.551   0.985  d/mux/out<0>LogicTrst1 (d/alu1/sb/notb_inc<0>)
+     LUT4:I2->O            2   0.551   0.945  d/alu1/ad/f2/Mxor_s_xo<0>21 (N19)
+     LUT3:I2->O            2   0.551   1.216  d/alu1/ad/f2/co1 (d/alu1/ad/carry<3>)
+     LUT3:I0->O            2   0.551   0.945  d/alu1/ad/f4/Mxor_s_xo<0>11 (N11)
+     LUT3:I2->O            2   0.551   1.216  d/alu1/ad/f4/co1 (d/alu1/ad/carry<5>)
+     LUT3:I0->O            2   0.551   0.903  d/alu1/ad/f6/Mxor_s_xo<0>11 (N2)
+     LUT4:I3->O            1   0.551   0.000  d/sel_prd/out<13>LogicTrst1271 (d/sel_prd/out<13>LogicTrst1271)
+     MUXF5:I1->O           1   0.360   0.996  d/sel_prd/out<13>LogicTrst127_f5 (d/sel_prd/out<13>LogicTrst127)
+     LUT3:I1->O            1   0.551   0.000  d/reg_main/d13/d1/Q_and000011 (d/reg_main/d13/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d13/d1/Q_and00001_f5 (d/reg_main/d13/d1/Q_and0000)
+     LUT3:I1->O            7   0.551   1.261  d/reg_main/d13/d2/Q1 (ans_13_OBUF)
+     LUT4:I1->O            1   0.551   0.000  d/sel_prd/out<11>LogicTrst1301 (d/sel_prd/out<11>LogicTrst1301)
+     MUXF5:I1->O           1   0.360   0.996  d/sel_prd/out<11>LogicTrst130_f5 (d/sel_prd/out<11>LogicTrst130)
+     LUT3:I1->O            1   0.551   0.000  d/reg_main/d11/d1/Q_and000011 (d/reg_main/d11/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d11/d1/Q_and00001_f5 (d/reg_main/d11/d1/Q_and0000)
+     LUT3:I1->O            7   0.551   1.405  d/reg_main/d11/d2/Q1 (ans_11_OBUF)
+     LUT3:I0->O            1   0.551   0.000  d/sel_prd/out<9>LogicTrst2171 (d/sel_prd/out<9>LogicTrst2171)
+     MUXF5:I1->O           1   0.360   0.996  d/sel_prd/out<9>LogicTrst217_f5 (d/sel_prd/out<9>LogicTrst217)
+     LUT4:I1->O            1   0.551   0.000  d/reg_main/d9/d1/Q_and000011 (d/reg_main/d9/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d9/d1/Q_and00001_f5 (d/reg_main/d9/d1/Q_and0000)
+     LUT3:I1->O            8   0.551   1.422  d/reg_main/d9/d2/Q1 (ans_9_OBUF)
+     LUT3:I0->O            1   0.551   0.827  d/alu1/out_sub<0>1 (d/alu1/out_sub<0>)
+     LUT4:I3->O            1   0.551   0.000  d/reg_main/d7/d1/Q_and000011 (d/reg_main/d7/d1/Q_and00001)
+     MUXF5:I1->O           3   0.360   1.102  d/reg_main/d7/d1/Q_and00001_f5 (d/reg_main/d7/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d7/d2/Q1 (ans_7_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d5/d1/Q_and000011 (d/reg_main/d5/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d5/d1/Q_and00001_f5 (d/reg_main/d5/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d5/d2/Q1 (ans_5_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d3/d1/Q_and000011 (d/reg_main/d3/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d3/d1/Q_and00001_f5 (d/reg_main/d3/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d3/d2/Q1 (ans_3_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d1/d1/Q_and000011 (d/reg_main/d1/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d1/d1/Q_and00001_f5 (d/reg_main/d1/d1/Q_and0000)
+     LUT3:I1->O            5   0.551   0.947  d/reg_main/d1/d2/Q1 (ans_1_OBUF)
+     LUT4:I3->O            8   0.551   1.278  c/fl/f_sel_1_and00001 (f_sel<1>)
+     LUT4:I1->O            1   0.551   0.996  d/sel_prd/out<14>LogicTrst206 (d/sel_prd/out<14>LogicTrst206)
+     LUT3:I1->O            1   0.551   0.000  d/reg_main/d14/d1/Q_and000011 (d/reg_main/d14/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d14/d1/Q_and00001_f5 (d/reg_main/d14/d1/Q_and0000)
+     LUT3:I1->O            7   0.551   1.261  d/reg_main/d14/d2/Q1 (ans_14_OBUF)
+     LUT4:I1->O            1   0.551   0.000  d/sel_prd/out<12>LogicTrst1301 (d/sel_prd/out<12>LogicTrst1301)
+     MUXF5:I1->O           1   0.360   0.996  d/sel_prd/out<12>LogicTrst130_f5 (d/sel_prd/out<12>LogicTrst130)
+     LUT3:I1->O            1   0.551   0.000  d/reg_main/d12/d1/Q_and000011 (d/reg_main/d12/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d12/d1/Q_and00001_f5 (d/reg_main/d12/d1/Q_and0000)
+     LUT3:I1->O            7   0.551   1.405  d/reg_main/d12/d2/Q1 (ans_12_OBUF)
+     LUT4:I0->O            1   0.551   0.869  d/sel_prd/out<10>LogicTrst179 (d/sel_prd/out<10>LogicTrst179)
+     LUT4:I2->O            1   0.551   0.996  d/sel_prd/out<10>LogicTrst213 (d/sel_prd/out<10>LogicTrst213)
+     LUT3:I1->O            1   0.551   0.000  d/reg_main/d10/d1/Q_and000011 (d/reg_main/d10/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d10/d1/Q_and00001_f5 (d/reg_main/d10/d1/Q_and0000)
+     LUT3:I1->O            7   0.551   1.405  d/reg_main/d10/d2/Q1 (ans_10_OBUF)
+     LUT4:I0->O            1   0.551   0.827  d/sel_prd/out<8>LogicTrst49 (d/sel_prd/out<8>LogicTrst49)
+     LUT4:I3->O            1   0.551   0.869  d/sel_prd/out<8>LogicTrst158 (d/sel_prd/out<8>LogicTrst158)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d8/d1/Q_and000011 (d/reg_main/d8/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d8/d1/Q_and00001_f5 (d/reg_main/d8/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d8/d2/Q1 (ans_8_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d6/d1/Q_and000011 (d/reg_main/d6/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d6/d1/Q_and00001_f5 (d/reg_main/d6/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d6/d2/Q1 (ans_6_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d4/d1/Q_and000011 (d/reg_main/d4/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d4/d1/Q_and00001_f5 (d/reg_main/d4/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d4/d2/Q1 (ans_4_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d2/d1/Q_and000011 (d/reg_main/d2/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d2/d1/Q_and00001_f5 (d/reg_main/d2/d1/Q_and0000)
+     LUT3:I1->O            6   0.551   1.071  d/reg_main/d2/d2/Q1 (ans_2_OBUF)
+     LUT3:I2->O            1   0.551   0.000  d/reg_main/d0/d1/Q_and000011 (d/reg_main/d0/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d0/d1/Q_and00001_f5 (d/reg_main/d0/d1/Q_and0000)
+     LUT3:I1->O            5   0.551   1.260  d/reg_main/d0/d2/Q1 (ans_0_OBUF)
+     LUT4:I0->O           26   0.551   2.014  c/fl/prd_sel_0_and00001 (prd_sel<0>)
+     LUT4:I1->O            3   0.551   1.102  d/sel_prd/out<15>LogicTrst1179 (d/reg_in<15>)
+     LUT3:I1->O            2   0.551   1.072  d/reg_main/d17/d1/Q_and00001 (d/reg_main/d17/d1/Q_and0000)
+     LUT3:I1->O            5   0.551   0.921  d/reg_main/d17/d2/Q1 (ans_17_OBUF)
+     OBUF:I->O                 5.644          ans_17_OBUF (ans<17>)
+    ----------------------------------------
+    Total                    103.836ns (42.958ns logic, 60.878ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1319269 / 18
+-------------------------------------------------------------------------
+Delay:               103.482ns (Levels of Logic = 75)
+  Source:            clk (PAD)
+  Destination:       ans<17> (PAD)
+
+  Data Path: clk to ans<17>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.821   1.071  clk_IBUF (clk_IBUF1)
+     LUT3:I2->O           16   0.551   1.576  c/ldr_1_and00001 (ldr<1>)
+     LUT3:I0->O            2   0.551   1.072  d/mcand_reg/d0/d1/Q_and00001 (d/mcand_reg/d0/d1/Q_and0000)
+     LUT3:I1->O            6   0.551   1.342  d/mcand_reg/d0/d2/Q1 (d/bus_y<0>)
+     LUT2:I0->O            4   0.551   0.985  d/mux/out<0>LogicTrst1 (d/alu1/sb/notb_inc<0>)
+     LUT4:I2->O            2   0.551   0.945  d/alu1/ad/f2/Mxor_s_xo<0>21 (N19)
+     LUT3:I2->O            2   0.551   1.216  d/alu1/ad/f2/co1 (d/alu1/ad/carry<3>)
+     LUT3:I0->O            2   0.551   0.945  d/alu1/ad/f4/Mxor_s_xo<0>11 (N11)
+     LUT3:I2->O            2   0.551   1.216  d/alu1/ad/f4/co1 (d/alu1/ad/carry<5>)
+     LUT3:I0->O            2   0.551   0.903  d/alu1/ad/f6/Mxor_s_xo<0>11 (N2)
+     LUT4:I3->O            1   0.551   0.000  d/sel_prd/out<13>LogicTrst1271 (d/sel_prd/out<13>LogicTrst1271)
+     MUXF5:I1->O           1   0.360   0.996  d/sel_prd/out<13>LogicTrst127_f5 (d/sel_prd/out<13>LogicTrst127)
+     LUT3:I1->O            1   0.551   0.000  d/reg_main/d13/d1/Q_and000011 (d/reg_main/d13/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d13/d1/Q_and00001_f5 (d/reg_main/d13/d1/Q_and0000)
+     LUT3:I1->O            7   0.551   1.261  d/reg_main/d13/d2/Q1 (ans_13_OBUF)
+     LUT4:I1->O            1   0.551   0.000  d/sel_prd/out<11>LogicTrst1301 (d/sel_prd/out<11>LogicTrst1301)
+     MUXF5:I1->O           1   0.360   0.996  d/sel_prd/out<11>LogicTrst130_f5 (d/sel_prd/out<11>LogicTrst130)
+     LUT3:I1->O            1   0.551   0.000  d/reg_main/d11/d1/Q_and000011 (d/reg_main/d11/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d11/d1/Q_and00001_f5 (d/reg_main/d11/d1/Q_and0000)
+     LUT3:I1->O            7   0.551   1.405  d/reg_main/d11/d2/Q1 (ans_11_OBUF)
+     LUT3:I0->O            1   0.551   0.000  d/sel_prd/out<9>LogicTrst2171 (d/sel_prd/out<9>LogicTrst2171)
+     MUXF5:I1->O           1   0.360   0.996  d/sel_prd/out<9>LogicTrst217_f5 (d/sel_prd/out<9>LogicTrst217)
+     LUT4:I1->O            1   0.551   0.000  d/reg_main/d9/d1/Q_and000011 (d/reg_main/d9/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d9/d1/Q_and00001_f5 (d/reg_main/d9/d1/Q_and0000)
+     LUT3:I1->O            8   0.551   1.422  d/reg_main/d9/d2/Q1 (ans_9_OBUF)
+     LUT3:I0->O            1   0.551   0.827  d/alu1/out_sub<0>1 (d/alu1/out_sub<0>)
+     LUT4:I3->O            1   0.551   0.000  d/reg_main/d7/d1/Q_and000011 (d/reg_main/d7/d1/Q_and00001)
+     MUXF5:I1->O           3   0.360   1.102  d/reg_main/d7/d1/Q_and00001_f5 (d/reg_main/d7/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d7/d2/Q1 (ans_7_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d5/d1/Q_and000011 (d/reg_main/d5/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d5/d1/Q_and00001_f5 (d/reg_main/d5/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d5/d2/Q1 (ans_5_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d3/d1/Q_and000011 (d/reg_main/d3/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d3/d1/Q_and00001_f5 (d/reg_main/d3/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d3/d2/Q1 (ans_3_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d1/d1/Q_and000011 (d/reg_main/d1/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d1/d1/Q_and00001_f5 (d/reg_main/d1/d1/Q_and0000)
+     LUT3:I1->O            5   0.551   0.947  d/reg_main/d1/d2/Q1 (ans_1_OBUF)
+     LUT4:I3->O            8   0.551   1.278  c/fl/f_sel_1_and00001 (f_sel<1>)
+     LUT4:I1->O            1   0.551   0.996  d/sel_prd/out<14>LogicTrst206 (d/sel_prd/out<14>LogicTrst206)
+     LUT3:I1->O            1   0.551   0.000  d/reg_main/d14/d1/Q_and000011 (d/reg_main/d14/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d14/d1/Q_and00001_f5 (d/reg_main/d14/d1/Q_and0000)
+     LUT3:I1->O            7   0.551   1.261  d/reg_main/d14/d2/Q1 (ans_14_OBUF)
+     LUT4:I1->O            1   0.551   0.000  d/sel_prd/out<12>LogicTrst1301 (d/sel_prd/out<12>LogicTrst1301)
+     MUXF5:I1->O           1   0.360   0.996  d/sel_prd/out<12>LogicTrst130_f5 (d/sel_prd/out<12>LogicTrst130)
+     LUT3:I1->O            1   0.551   0.000  d/reg_main/d12/d1/Q_and000011 (d/reg_main/d12/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d12/d1/Q_and00001_f5 (d/reg_main/d12/d1/Q_and0000)
+     LUT3:I1->O            7   0.551   1.405  d/reg_main/d12/d2/Q1 (ans_12_OBUF)
+     LUT4:I0->O            1   0.551   0.869  d/sel_prd/out<10>LogicTrst179 (d/sel_prd/out<10>LogicTrst179)
+     LUT4:I2->O            1   0.551   0.996  d/sel_prd/out<10>LogicTrst213 (d/sel_prd/out<10>LogicTrst213)
+     LUT3:I1->O            1   0.551   0.000  d/reg_main/d10/d1/Q_and000011 (d/reg_main/d10/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d10/d1/Q_and00001_f5 (d/reg_main/d10/d1/Q_and0000)
+     LUT3:I1->O            7   0.551   1.405  d/reg_main/d10/d2/Q1 (ans_10_OBUF)
+     LUT4:I0->O            1   0.551   0.827  d/sel_prd/out<8>LogicTrst49 (d/sel_prd/out<8>LogicTrst49)
+     LUT4:I3->O            1   0.551   0.869  d/sel_prd/out<8>LogicTrst158 (d/sel_prd/out<8>LogicTrst158)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d8/d1/Q_and000011 (d/reg_main/d8/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d8/d1/Q_and00001_f5 (d/reg_main/d8/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d8/d2/Q1 (ans_8_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d6/d1/Q_and000011 (d/reg_main/d6/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d6/d1/Q_and00001_f5 (d/reg_main/d6/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d6/d2/Q1 (ans_6_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d4/d1/Q_and000011 (d/reg_main/d4/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d4/d1/Q_and00001_f5 (d/reg_main/d4/d1/Q_and0000)
+     LUT3:I1->O            3   0.551   0.975  d/reg_main/d4/d2/Q1 (ans_4_OBUF)
+     LUT4:I2->O            1   0.551   0.000  d/reg_main/d2/d1/Q_and000011 (d/reg_main/d2/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d2/d1/Q_and00001_f5 (d/reg_main/d2/d1/Q_and0000)
+     LUT3:I1->O            6   0.551   1.071  d/reg_main/d2/d2/Q1 (ans_2_OBUF)
+     LUT3:I2->O            1   0.551   0.000  d/reg_main/d0/d1/Q_and000011 (d/reg_main/d0/d1/Q_and00001)
+     MUXF5:I1->O           2   0.360   1.072  d/reg_main/d0/d1/Q_and00001_f5 (d/reg_main/d0/d1/Q_and0000)
+     LUT3:I1->O            5   0.551   1.260  d/reg_main/d0/d2/Q1 (ans_0_OBUF)
+     LUT4:I0->O           26   0.551   2.014  c/fl/prd_sel_0_and00001 (prd_sel<0>)
+     LUT4:I1->O            3   0.551   1.102  d/sel_prd/out<15>LogicTrst1179 (d/reg_in<15>)
+     LUT3:I1->O            2   0.551   1.072  d/reg_main/d17/d1/Q_and00001 (d/reg_main/d17/d1/Q_and0000)
+     LUT3:I1->O            5   0.551   0.921  d/reg_main/d17/d2/Q1 (ans_17_OBUF)
+     OBUF:I->O                 5.644          ans_17_OBUF (ans<17>)
+    ----------------------------------------
+    Total                    103.482ns (43.059ns logic, 60.423ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.31 secs
+ 
+--> 
+
+Total memory usage is 299068 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  100 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

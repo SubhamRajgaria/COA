@@ -1,0 +1,43 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/BMtest_isim_beh.exe -prj C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/BMtest_beh.prj work.BMtest work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 301: Size mismatch in connection of port <in>. Formal port size is 16-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 303: Size mismatch in connection of port <in>. Formal port size is 16-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 313: Size mismatch in connection of port <in>. Formal port size is 16-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 324: Size mismatch in connection of port <in>. Formal port size is 16-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 332: Size mismatch in connection of port <in>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 345: Size mismatch in connection of port <c>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 297: Size mismatch in connection of port <in>. Formal port size is 16-bit while actual signal size is 3-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 91: Size mismatch in connection of port <c>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 73: Size mismatch in connection of port <b>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/booth.v" Line 358: Size mismatch in connection of port <in>. Formal port size is 16-bit while actual signal size is 3-bit.
+Completed static elaboration
+Compiling module multiplexer1
+Compiling module register1
+Compiling module add1
+Compiling module AddSub
+Compiling module countdec
+Compiling module countch
+Compiling module cmpl2
+Compiling module multiplexer2
+Compiling module shiftreg
+Compiling module multiplexer3
+Compiling module datapath
+Compiling module register2
+Compiling module next_state
+Compiling module selld
+Compiling module controller
+Compiling module Boothmult
+Compiling module BMtest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 18 Verilog Units
+Built simulation executable C:/Users/Subham Rajgaria/Desktop/group14/BoothMultiplier/BMtest_isim_beh.exe
+Fuse Memory Usage: 29016 KB
+Fuse CPU Usage: 984 ms

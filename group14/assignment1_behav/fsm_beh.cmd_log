@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/Subham Rajgaria/Desktop/group14/assignment1_behav/top.v} -lang verilog -prj assignment1_behav -o fsm_beh.spl -module fsm_beh -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 fsm_beh.spl {C:/Users/Subham Rajgaria/Desktop/group14/assignment1_behav/fsm_beh.sym} 

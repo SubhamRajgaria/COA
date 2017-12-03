@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+multiplier instance_name (
+    .state(state), 
+    .ans(ans), 
+    .over(over), 
+    .mplier(mplier), 
+    .mcand(mcand), 
+    .clk(clk), 
+    .rst(rst), 
+    .go(go)
+    );
+
+

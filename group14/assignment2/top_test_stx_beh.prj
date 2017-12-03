@@ -1,0 +1,8 @@
+verilog isim_temp "status_detector.v"
+verilog isim_temp "registers.v"
+verilog isim_temp "functional_unit.v"
+verilog isim_temp "datapath.v"
+verilog isim_temp "controller_fsm.v"
+verilog isim_temp "top.v"
+verilog isim_temp "top_test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

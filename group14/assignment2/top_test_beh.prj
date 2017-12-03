@@ -1,0 +1,8 @@
+verilog work "status_detector.v"
+verilog work "registers.v"
+verilog work "functional_unit.v"
+verilog work "datapath.v"
+verilog work "controller_fsm.v"
+verilog work "top.v"
+verilog work "top_test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

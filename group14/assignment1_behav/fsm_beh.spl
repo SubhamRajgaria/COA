@@ -1,0 +1,10 @@
+[Inputs]
+x
+clk
+reset
+[Outputs]
+z
+[BiDir]
+[ATTRIBUTES]
+VeriModel fsm_beh
+

@@ -1,0 +1,31 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Aug 17 11:06:07 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "swin<7>" LOCATE = SITE "P199" LEVEL 1;
+COMP "out<9>" LOCATE = SITE "P150" LEVEL 1;
+COMP "swin<8>" LOCATE = SITE "P5" LEVEL 1;
+COMP "swin<9>" LOCATE = SITE "P7" LEVEL 1;
+COMP "clk" LOCATE = SITE "P76" LEVEL 1;
+COMP "go" LOCATE = SITE "P3" LEVEL 1;
+COMP "over" LOCATE = SITE "P147" LEVEL 1;
+COMP "out<0>" LOCATE = SITE "P139" LEVEL 1;
+COMP "out<1>" LOCATE = SITE "P140" LEVEL 1;
+COMP "swin<0>" LOCATE = SITE "P191" LEVEL 1;
+COMP "out<2>" LOCATE = SITE "P137" LEVEL 1;
+COMP "swin<1>" LOCATE = SITE "P190" LEVEL 1;
+COMP "out<3>" LOCATE = SITE "P138" LEVEL 1;
+COMP "swin<2>" LOCATE = SITE "P196" LEVEL 1;
+COMP "out<4>" LOCATE = SITE "P133" LEVEL 1;
+COMP "swin<3>" LOCATE = SITE "P194" LEVEL 1;
+COMP "out<5>" LOCATE = SITE "P135" LEVEL 1;
+COMP "swin<4>" LOCATE = SITE "P198" LEVEL 1;
+COMP "out<6>" LOCATE = SITE "P131" LEVEL 1;
+COMP "swin<5>" LOCATE = SITE "P197" LEVEL 1;
+COMP "out<7>" LOCATE = SITE "P132" LEVEL 1;
+COMP "swin<6>" LOCATE = SITE "P200" LEVEL 1;
+COMP "out<8>" LOCATE = SITE "P149" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

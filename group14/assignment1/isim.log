@@ -1,0 +1,31 @@
+ISim log file
+Running: C:\Users\Subham Rajgaria\Desktop\group14\assignment1\outputTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Subham Rajgaria/Desktop/group14/assignment1/outputTest_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/assignment1/outputTest.v" Line 34.  For instance outputTest/sample/, width 1 of formal port clk is not equal to width 2 of actual signal state.
+WARNING: File "C:/Users/Subham Rajgaria/Desktop/group14/assignment1/outputTest.v" Line 28.  For instance outputTest/sample/, width 2 of formal port state is not equal to width 1 of actual variable clk. 
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+State = 01  Input = 0 Output = 0
+State = 10  Input = 1 Output = 1
+State = 01  Input = 0 Output = 0
+State = 00  Input = 0 Output = 0
+State = 10  Input = 1 Output = 0
+State = 11  Input = 1 Output = 0
+State = 01  Input = 0 Output = 1
+State = 10  Input = 1 Output = 1
+State = 11  Input = 1 Output = 0
+State = 10  Input = 1 Output = 0
+State = 01  Input = 0 Output = 0
+State = 00  Input = 0 Output = 0
+State = 01  Input = 0 Output = 0
+State = 10  Input = 1 Output = 1
+State = 01  Input = 0 Output = 0
+State = 00  Input = 0 Output = 0

@@ -1,0 +1,2 @@
+verilog work "netgen/par/multiplier_timesim.v"
+verilog work "radixTest.v"

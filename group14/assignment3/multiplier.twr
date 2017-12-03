@@ -1,0 +1,307 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml multiplier.twx multiplier.ncd -o multiplier.twr
+multiplier.pcf
+
+Design file:              multiplier.ncd
+Physical constraint file: multiplier.pcf
+Device,package,speed:     xc3s400,fg320,-4 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+go          |    3.936(R)|    0.375(R)|clk_IBUF          |   0.000|
+rst         |    2.356(R)|   -0.064(R)|clk_IBUF          |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ans<0>      |   79.744(R)|clk_IBUF          |   0.000|
+ans<1>      |   58.158(R)|clk_IBUF          |   0.000|
+ans<2>      |   76.476(R)|clk_IBUF          |   0.000|
+ans<3>      |   55.838(R)|clk_IBUF          |   0.000|
+ans<4>      |   73.644(R)|clk_IBUF          |   0.000|
+ans<5>      |   53.340(R)|clk_IBUF          |   0.000|
+ans<6>      |   71.700(R)|clk_IBUF          |   0.000|
+ans<7>      |   50.893(R)|clk_IBUF          |   0.000|
+ans<8>      |   68.336(R)|clk_IBUF          |   0.000|
+ans<9>      |   48.294(R)|clk_IBUF          |   0.000|
+ans<10>     |   62.663(R)|clk_IBUF          |   0.000|
+ans<11>     |   41.668(R)|clk_IBUF          |   0.000|
+ans<12>     |   30.565(R)|clk_IBUF          |   0.000|
+ans<13>     |   37.589(R)|clk_IBUF          |   0.000|
+ans<14>     |   26.728(R)|clk_IBUF          |   0.000|
+ans<15>     |   13.000(R)|clk_IBUF          |   0.000|
+ans<16>     |   13.515(R)|clk_IBUF          |   0.000|
+ans<17>     |   83.308(R)|clk_IBUF          |   0.000|
+over        |   11.114(R)|clk_IBUF          |   0.000|
+state<0>    |   10.402(R)|clk_IBUF          |   0.000|
+state<1>    |   10.460(R)|clk_IBUF          |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.401|    9.401|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |ans<0>         |   79.527|
+clk            |ans<1>         |   57.941|
+clk            |ans<2>         |   76.259|
+clk            |ans<3>         |   55.621|
+clk            |ans<4>         |   73.427|
+clk            |ans<5>         |   53.123|
+clk            |ans<6>         |   71.483|
+clk            |ans<7>         |   50.676|
+clk            |ans<8>         |   68.119|
+clk            |ans<9>         |   48.077|
+clk            |ans<10>        |   62.446|
+clk            |ans<11>        |   41.451|
+clk            |ans<12>        |   30.348|
+clk            |ans<13>        |   37.372|
+clk            |ans<14>        |   26.511|
+clk            |ans<15>        |   13.144|
+clk            |ans<16>        |   13.659|
+clk            |ans<17>        |   83.091|
+mcand<0>       |ans<0>         |   75.195|
+mcand<0>       |ans<1>         |   53.609|
+mcand<0>       |ans<2>         |   71.927|
+mcand<0>       |ans<3>         |   51.289|
+mcand<0>       |ans<4>         |   69.095|
+mcand<0>       |ans<5>         |   48.791|
+mcand<0>       |ans<6>         |   67.151|
+mcand<0>       |ans<7>         |   46.344|
+mcand<0>       |ans<8>         |   63.787|
+mcand<0>       |ans<9>         |   43.745|
+mcand<0>       |ans<10>        |   58.114|
+mcand<0>       |ans<11>        |   37.119|
+mcand<0>       |ans<12>        |   26.016|
+mcand<0>       |ans<13>        |   33.040|
+mcand<0>       |ans<14>        |   22.179|
+mcand<0>       |ans<17>        |   78.759|
+mcand<1>       |ans<0>         |   75.281|
+mcand<1>       |ans<1>         |   53.695|
+mcand<1>       |ans<2>         |   72.013|
+mcand<1>       |ans<3>         |   51.375|
+mcand<1>       |ans<4>         |   69.181|
+mcand<1>       |ans<5>         |   48.877|
+mcand<1>       |ans<6>         |   67.237|
+mcand<1>       |ans<7>         |   46.430|
+mcand<1>       |ans<8>         |   63.873|
+mcand<1>       |ans<9>         |   43.831|
+mcand<1>       |ans<10>        |   58.200|
+mcand<1>       |ans<11>        |   37.205|
+mcand<1>       |ans<12>        |   26.102|
+mcand<1>       |ans<13>        |   33.126|
+mcand<1>       |ans<14>        |   22.265|
+mcand<1>       |ans<17>        |   78.845|
+mcand<2>       |ans<0>         |   74.478|
+mcand<2>       |ans<1>         |   52.892|
+mcand<2>       |ans<2>         |   71.210|
+mcand<2>       |ans<3>         |   50.572|
+mcand<2>       |ans<4>         |   68.378|
+mcand<2>       |ans<5>         |   48.074|
+mcand<2>       |ans<6>         |   66.434|
+mcand<2>       |ans<7>         |   45.627|
+mcand<2>       |ans<8>         |   63.070|
+mcand<2>       |ans<9>         |   43.028|
+mcand<2>       |ans<10>        |   57.397|
+mcand<2>       |ans<11>        |   36.402|
+mcand<2>       |ans<12>        |   25.299|
+mcand<2>       |ans<13>        |   32.323|
+mcand<2>       |ans<14>        |   21.462|
+mcand<2>       |ans<17>        |   78.042|
+mcand<3>       |ans<0>         |   73.456|
+mcand<3>       |ans<1>         |   51.870|
+mcand<3>       |ans<2>         |   70.188|
+mcand<3>       |ans<3>         |   49.550|
+mcand<3>       |ans<4>         |   67.356|
+mcand<3>       |ans<5>         |   47.052|
+mcand<3>       |ans<6>         |   65.412|
+mcand<3>       |ans<7>         |   44.605|
+mcand<3>       |ans<8>         |   62.048|
+mcand<3>       |ans<9>         |   42.006|
+mcand<3>       |ans<10>        |   56.375|
+mcand<3>       |ans<11>        |   35.380|
+mcand<3>       |ans<12>        |   24.277|
+mcand<3>       |ans<13>        |   31.301|
+mcand<3>       |ans<14>        |   20.440|
+mcand<3>       |ans<17>        |   77.020|
+mcand<4>       |ans<0>         |   73.818|
+mcand<4>       |ans<1>         |   52.232|
+mcand<4>       |ans<2>         |   70.550|
+mcand<4>       |ans<3>         |   49.912|
+mcand<4>       |ans<4>         |   67.718|
+mcand<4>       |ans<5>         |   47.414|
+mcand<4>       |ans<6>         |   65.774|
+mcand<4>       |ans<7>         |   44.967|
+mcand<4>       |ans<8>         |   62.410|
+mcand<4>       |ans<9>         |   42.368|
+mcand<4>       |ans<10>        |   56.737|
+mcand<4>       |ans<11>        |   35.742|
+mcand<4>       |ans<12>        |   24.639|
+mcand<4>       |ans<13>        |   31.663|
+mcand<4>       |ans<14>        |   20.802|
+mcand<4>       |ans<17>        |   77.382|
+mcand<5>       |ans<0>         |   72.389|
+mcand<5>       |ans<1>         |   50.803|
+mcand<5>       |ans<2>         |   69.121|
+mcand<5>       |ans<3>         |   48.483|
+mcand<5>       |ans<4>         |   66.289|
+mcand<5>       |ans<5>         |   45.985|
+mcand<5>       |ans<6>         |   64.345|
+mcand<5>       |ans<7>         |   43.538|
+mcand<5>       |ans<8>         |   60.981|
+mcand<5>       |ans<9>         |   40.939|
+mcand<5>       |ans<10>        |   55.308|
+mcand<5>       |ans<11>        |   34.313|
+mcand<5>       |ans<12>        |   23.210|
+mcand<5>       |ans<13>        |   30.234|
+mcand<5>       |ans<14>        |   19.373|
+mcand<5>       |ans<17>        |   75.953|
+mcand<6>       |ans<0>         |   71.460|
+mcand<6>       |ans<1>         |   49.874|
+mcand<6>       |ans<2>         |   68.192|
+mcand<6>       |ans<3>         |   47.554|
+mcand<6>       |ans<4>         |   65.360|
+mcand<6>       |ans<5>         |   45.056|
+mcand<6>       |ans<6>         |   63.416|
+mcand<6>       |ans<7>         |   42.609|
+mcand<6>       |ans<8>         |   60.052|
+mcand<6>       |ans<9>         |   40.010|
+mcand<6>       |ans<10>        |   54.379|
+mcand<6>       |ans<11>        |   33.384|
+mcand<6>       |ans<12>        |   22.281|
+mcand<6>       |ans<13>        |   29.305|
+mcand<6>       |ans<14>        |   18.444|
+mcand<6>       |ans<17>        |   75.024|
+mcand<7>       |ans<0>         |   68.571|
+mcand<7>       |ans<1>         |   46.985|
+mcand<7>       |ans<2>         |   65.303|
+mcand<7>       |ans<3>         |   44.665|
+mcand<7>       |ans<4>         |   62.471|
+mcand<7>       |ans<5>         |   42.167|
+mcand<7>       |ans<6>         |   60.527|
+mcand<7>       |ans<7>         |   39.720|
+mcand<7>       |ans<8>         |   57.163|
+mcand<7>       |ans<9>         |   37.121|
+mcand<7>       |ans<10>        |   51.490|
+mcand<7>       |ans<11>        |   30.495|
+mcand<7>       |ans<12>        |   19.392|
+mcand<7>       |ans<13>        |   26.416|
+mcand<7>       |ans<14>        |   15.555|
+mcand<7>       |ans<17>        |   72.135|
+mplier<0>      |ans<0>         |   31.406|
+mplier<0>      |ans<1>         |    9.820|
+mplier<0>      |ans<2>         |   28.138|
+mplier<0>      |ans<4>         |   25.306|
+mplier<0>      |ans<6>         |   23.362|
+mplier<0>      |ans<8>         |   19.998|
+mplier<0>      |ans<10>        |   14.325|
+mplier<0>      |ans<17>        |   34.970|
+mplier<1>      |ans<0>         |   13.299|
+mplier<1>      |ans<2>         |   10.031|
+mplier<1>      |ans<17>        |   16.863|
+mplier<2>      |ans<0>         |   34.342|
+mplier<2>      |ans<1>         |   12.756|
+mplier<2>      |ans<2>         |   31.074|
+mplier<2>      |ans<3>         |   10.436|
+mplier<2>      |ans<4>         |   28.242|
+mplier<2>      |ans<6>         |   26.298|
+mplier<2>      |ans<8>         |   22.934|
+mplier<2>      |ans<10>        |   17.261|
+mplier<2>      |ans<17>        |   37.906|
+mplier<3>      |ans<0>         |   15.079|
+mplier<3>      |ans<2>         |   11.811|
+mplier<3>      |ans<4>         |    8.979|
+mplier<3>      |ans<17>        |   18.643|
+mplier<4>      |ans<0>         |   35.716|
+mplier<4>      |ans<1>         |   14.130|
+mplier<4>      |ans<2>         |   32.448|
+mplier<4>      |ans<3>         |   11.810|
+mplier<4>      |ans<4>         |   29.616|
+mplier<4>      |ans<5>         |    9.312|
+mplier<4>      |ans<6>         |   27.672|
+mplier<4>      |ans<8>         |   24.308|
+mplier<4>      |ans<10>        |   18.635|
+mplier<4>      |ans<17>        |   39.280|
+mplier<5>      |ans<0>         |   19.722|
+mplier<5>      |ans<2>         |   16.454|
+mplier<5>      |ans<4>         |   13.622|
+mplier<5>      |ans<6>         |   11.678|
+mplier<5>      |ans<17>        |   23.286|
+mplier<6>      |ans<0>         |   40.335|
+mplier<6>      |ans<1>         |   18.749|
+mplier<6>      |ans<2>         |   37.067|
+mplier<6>      |ans<3>         |   16.429|
+mplier<6>      |ans<4>         |   34.235|
+mplier<6>      |ans<5>         |   13.931|
+mplier<6>      |ans<6>         |   32.291|
+mplier<6>      |ans<7>         |   11.484|
+mplier<6>      |ans<8>         |   28.927|
+mplier<6>      |ans<10>        |   23.254|
+mplier<6>      |ans<17>        |   43.899|
+mplier<7>      |ans<0>         |   24.234|
+mplier<7>      |ans<2>         |   20.966|
+mplier<7>      |ans<4>         |   18.134|
+mplier<7>      |ans<6>         |   16.190|
+mplier<7>      |ans<8>         |   12.826|
+mplier<7>      |ans<17>        |   27.798|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Aug 19 01:56:20 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 156 MB
+
+
+

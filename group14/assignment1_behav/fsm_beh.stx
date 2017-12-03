@@ -1,0 +1,36 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Subham Rajgaria/Desktop/group14/assignment1_behav/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Subham Rajgaria/Desktop/group14/assignment1_behav/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "top.v" in library work
+Module <top> compiled
+Module <fsm_beh> compiled
+Module <stateTransFn_beh> compiled
+ERROR:HDLCompilers:26 - "top.v" line 87 expecting 'endmodule', found '$display'
+Module <outputFn_beh> compiled
+Module <delayElem_beh> compiled
+Module <testBench> compiled
+Analysis of file <"fsm_beh.prj"> failed.
+--> 
+
+Total memory usage is 262104 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

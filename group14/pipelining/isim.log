@@ -1,0 +1,36 @@
+ISim log file
+Running: C:\Users\Subham Rajgaria\Desktop\group14\pipelining\test_bench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Subham Rajgaria/Desktop/group14/pipelining/test_bench_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Time:           0 [clk]= 0
+[$s0] = 00000000 [$s1] = 00000000 [$s2] = 00000000 
+[$s3] = 00000000 [$s4] = 00000000 [$s5] = 00000000 
+[$s6] = 00000000 [$s7] = 00000000 [$t0] = 00000000 
+[$t1] = 00000000 [$t2] = 00000000 [$t3] = 00000000 
+[$t4] = 00000000 [$t5] = 00000000 [$t6] = 00000000 
+[$t7] = 00000000 [$t8] = 00000000 [$t9] = 00000000 
+Time:           1 [clk]= 1
+[$s0] = 00000000 [$s1] = 00000000 [$s2] = 00000000 
+[$s3] = 00000000 [$s4] = 00000000 [$s5] = 00000000 
+[$s6] = 00000000 [$s7] = 00000000 [$t0] = 00000000 
+[$t1] = 00000000 [$t2] = 00000000 [$t3] = 00000000 
+[$t4] = 00000000 [$t5] = 00000000 [$t6] = 00000000 
+[$t7] = 00000000 [$t8] = 00000000 [$t9] = 00000000 
+Time:           1 [clk]= 0
+[$s0] = 00000000 [$s1] = 00000000 [$s2] = 00000000 
+[$s3] = 00000000 [$s4] = 00000000 [$s5] = 00000000 
+[$s6] = 00000000 [$s7] = 00000000 [$t0] = 00000000 
+[$t1] = 00000000 [$t2] = 00000000 [$t3] = 00000000 
+[$t4] = 00000000 [$t5] = 00000000 [$t6] = 00000000 
+[$t7] = 00000000 [$t8] = 00000000 [$t9] = 00000000 
+Time:           2 [clk]= 1
+[$s0] = 00000000 [$s1] = 00000000 [$s2] = 00000000 

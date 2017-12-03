@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/Subham Rajgaria/Desktop/group14/assignment1/stateTransFn_beh.v} -lang verilog -prj assignment1 -o stateTransFn_beh.spl -module stateTransFn_beh -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 stateTransFn_beh.spl {C:/Users/Subham Rajgaria/Desktop/group14/assignment1/stateTransFn_beh.sym} 

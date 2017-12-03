@@ -1,0 +1,47 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Subham Rajgaria/Desktop/group14/pipelining/test_bench_isim_beh.exe -prj C:/Users/Subham Rajgaria/Desktop/group14/pipelining/test_bench_beh.prj work.test_bench work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Subham Rajgaria/Desktop/group14/pipelining/pipeline.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Subham Rajgaria/Desktop/group14/pipelining/pipeline.v" Line 1066: Port Cathode is not connected to this instance
+Completed static elaboration
+Compiling module Mux_N_bit
+Compiling module Program_Counter
+Compiling module Instruction_Memory
+Compiling module ALU_add_only
+Compiling module IF_ID_Stage_Reg
+Compiling module Register_File
+Compiling module Sign_Extension
+Compiling module Shift_Left_2_Jump
+Compiling module Control
+Compiling module ID_EX_Stage_Reg
+Compiling module Mux_N_bit(N=5)
+Compiling module ALUControl
+Compiling module Mux_32bit_3to1
+Compiling module ALU
+Compiling module Shift_Left_2_Branch
+Compiling module EX_MEM_Stage_Reg
+Compiling module Data_Memory
+Compiling module jump_OR_branch
+Compiling module MEM_WB_Stage_Reg
+Compiling module Forwarding_Control
+Compiling module stall_for_lw_Control
+Compiling module branch_and_jump_hazard_control
+Compiling module Dff_asy
+Compiling module divide_by_100k
+Compiling module divide_by_500
+Compiling module Ring_4_counter
+Compiling module ssd_driver
+Compiling module choose_chathode
+Compiling module pipeline
+Compiling module test_bench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 9 sub-compilation(s) to finish...
+Compiled 31 Verilog Units
+Built simulation executable C:/Users/Subham Rajgaria/Desktop/group14/pipelining/test_bench_isim_beh.exe
+Fuse Memory Usage: 31124 KB
+Fuse CPU Usage: 1233 ms
